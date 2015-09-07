@@ -1,12 +1,16 @@
 [submodule "roles/users"]
 	path = roles/users
 	url = git@github.com:timmahoney/users-ansible-role.git
+	ignore = all
 [submodule "roles/common"]
 	path = roles/common
 	url = git@github.com:timmahoney/common-ansible-role.git
+	ignore = all
 [submodule "roles/hosts"]
 	path = roles/hosts
 	url = git@github.com:timmahoney/hosts-ansible-role.git
+	ignore = all
 [submodule "roles/mysql"]
 	path = roles/mysql
 	url = git@github.com:timmahoney/mysql-ansible-role.git
+	ignore = all
