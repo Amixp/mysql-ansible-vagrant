@@ -2,7 +2,7 @@
 - hosts:
   - db
   roles:
-  - users
   - common
+  - users
   - hosts
   - mysql
