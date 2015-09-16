@@ -18,3 +18,8 @@
 	url = git@github.com:timmahoney/mysql-ansible-role.git
 	branch = master
 	ignore = all
+[submodule "roles/mydumper"]
+	path = roles/mydumper
+	url = git@github.com:timmahoney/mydumper-ansible-role.git
+	branch = master
+	ignore = all
