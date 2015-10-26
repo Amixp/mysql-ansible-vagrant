@@ -23,3 +23,8 @@
 	url = git@github.com:timmahoney/mydumper-ansible-role.git
 	branch = master
 	ignore = all
+[submodule "roles/firewall"]
+	path = roles/firewall
+	url = git@github.com:timmahoney/firewall-ansible-role.git
+	branch = master
+	ignore = all
