@@ -3,6 +3,7 @@
   - db
   roles:
   - common
+  - firewall
   - users
   - hosts
   - mysql

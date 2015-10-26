@@ -10,3 +10,7 @@ mysql_users:
   - 127.0.0.1
   - 192.168.56.1
   - "%"
+
+firewalld_allow:
+-
+  port: 3306/tcp
