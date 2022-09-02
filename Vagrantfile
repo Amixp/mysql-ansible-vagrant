@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Vagrant Box information
-  config.vm.box = "centos7"
+  config.vm.box = "centos/7"
   config.vm.box_url = "https://github.com/holms/vagrant-centos7-box/releases/download/7.1.1503.001/CentOS-7.1.1503-x86_64-netboot.box"
   config.ssh.insert_key = false
   config.ssh.forward_agent = true
@@ -31,7 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     unless File.exist?(database_vdi)
       vb.customize ['createhd', '--filename', database_vdi, '--size', 20 * 1024]
     end
-    vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', database_vdi]
+    vb.customize ['storageattach', :id, '--storagectl', 'IDE', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', database_vdi]
 
   end
 
